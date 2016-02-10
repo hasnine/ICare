@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardViewMembers"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            >
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageViewDietFixedPhoto"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/image_view_border"
+                android:src="@drawable/diet_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textviewDietTitle"
+                android:textSize="25sp"
+                android:text="Title"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imageViewDietFixedPhoto" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Time"
+                android:id="@+id/textViewDietTime"
+                android:layout_alignBottom="@+id/imageViewDietFixedPhoto"
+                android:layout_alignStart="@+id/textviewDietTitle" />
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+</LinearLayout>

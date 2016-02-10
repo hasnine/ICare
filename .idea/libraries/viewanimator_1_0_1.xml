@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="viewanimator-1.0.1">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.florent37/viewanimator/1.0.1/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.florent37/viewanimator/1.0.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.florent37/viewanimator/1.0.1/676e8c40765f4b8724e34b51ae5c145d0249a450/viewanimator-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

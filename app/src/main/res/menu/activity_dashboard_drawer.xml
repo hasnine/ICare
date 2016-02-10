@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_action_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_members"
+            android:icon="@drawable/ic_action_user_blue"
+            android:title="Members" />
+        <item
+            android:id="@+id/nav_doctors"
+            android:icon="@drawable/ic_action_users"
+            android:title="Doctors" />
+        <item
+            android:id="@+id/nav_hospitals"
+            android:icon="@drawable/ic_action_pill"
+            android:title="Hospitals" />
+        <item
+            android:id="@+id/nav_my_profile"
+            android:icon="@drawable/ic_action_user"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+    </group>
+
+    <!--<item android:title="Personalize">
+        <menu>
+
+        </menu>
+    </item>-->
+
+</menu>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#7dffffff">
+
+                <EditText
+                    android:imeOptions="flagNoExtractUi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/editTextRegisterPassword"
+                    android:hint="password"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+                <EditText
+                    android:imeOptions="flagNoExtractUi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/editTextRegisterConfirmPassword"
+                    android:hint="confirm password"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <EditText
+                    android:imeOptions="flagNoExtractUi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/editTextRegisterName"
+                    android:hint="name"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <EditText
+                android:imeOptions="flagNoExtractUi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editTextRegisterAge"
+                android:hint="age"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+                <EditText
+                    android:imeOptions="flagNoExtractUi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/editTextRegisterHeight"
+                    android:hint="height in meters"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <EditText
+                    android:imeOptions="flagNoExtractUi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/editTextRegisterWeight"
+                    android:hint="weight in kg"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <EditText
+                    android:imeOptions="flagNoExtractUi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/editTextRegisterPhone"
+                    android:hint="phone"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerRegisterGender"
+                    android:entries="@array/gender"
+                    />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Register"
+                        android:id="@+id/buttonRegister"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/ps__button_pinterest"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.newfeds.icare.activities.EditMember">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageViewEditMember"
+                android:layout_gravity="center"
+                android:background="#ffbdbd"
+                android:src="@drawable/user_icon"
+                android:scaleType="fitCenter" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Picture"
+                android:drawableLeft="@drawable/ic_menu_camera"
+                android:background="#33fffbfb"
+                android:id="@+id/buttonEditMemberChooseFromGallary"
+                android:layout_gravity="left|bottom"
+                android:alpha=".5" />
+
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/scrollView"
+            android:layout_weight="2" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:isScrollContainer="true">
+
+                <EditText
+                    android:imeOptions="flagNoExtractUi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/editTextEditMemberName"
+                    android:hint="name"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <EditText
+                    android:imeOptions="flagNoExtractUi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/editTextEditMemberAge"
+                    android:hint="age"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <EditText
+                    android:imeOptions="flagNoExtractUi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/editTextEditMemberHeight"
+                    android:hint="height in meters"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <EditText
+                    android:imeOptions="flagNoExtractUi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/editTextEditMemberWeight"
+                    android:hint="weight in kg"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+
+                <EditText
+                    android:imeOptions="flagNoExtractUi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/editTextEditMemberPhone"
+                    android:hint="phone"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerEditMemberGender"
+                    android:entries="@array/gender"
+                    android:scrollbarSize="30dp"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbarSize="30dp"
+                    android:id="@+id/spinnerEditMemberRelationship"
+                    android:entries="@array/relationship"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:background="@drawable/ps__button_pinterest"
+            android:textColor="#FFFFFF"
+            android:id="@+id/buttonEditMemberFinal" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardViewAppointments"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textviewAppointmentTitle"
+            android:textSize="30sp"
+            android:text="Title"
+            android:layout_centerVertical="true"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textviewAppointmentDoctor"
+                android:textSize="25sp"
+                android:text="Title"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textviewAppointmentTime"
+                android:textSize="15sp"
+                android:text="Title"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textviewAppointmentDescription"
+                android:textSize="15sp"
+                android:text="Title"
+                android:layout_centerVertical="true"
+                />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

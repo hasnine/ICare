@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.newfeds.icare">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activities.Dashboard"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.AddMember"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Add Member"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ProfileSettingsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddDoctor"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Add Doctor"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".services.OnBootService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver android:name=".BroadcastReceivers.AlarmReceiver"></receiver>
+        <receiver android:name=".BroadcastReceivers.StartIcareAtBootReciver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activities.MemberDashboard"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Members"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddVaccination"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Vaccination"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.AddDiet" />
+        <activity android:name=".activities.AddAppointments" />
+        <activity android:name=".activities.AddPrescription" />
+        <activity android:name=".activities.EditMember" />
+        <activity android:name=".activities.EditDoctor" />
+        <activity android:name=".activities.EditMyProfile" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activities.MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
+    </application>
+
+</manifest>
